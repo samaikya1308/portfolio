@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+section {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f0f0, #e6f7ff);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+header img {
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #2E8B57;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2E8B57;
+    text-decoration: underline;
+}
+
+button, .btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #2E8B57;
+}
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
+}
+#certificates ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certificates li {
+    background: #f7f7f7;
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+#certificates li:hover {
+    transform: translateX(10px);
+    background: #eaffea;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form button {
+    align-self: flex-start;
+}
+body.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+body.dark section {
+    background: #1e1e1e;
+    color: #f1f1f1;
+}
+
+body.dark nav {
+    background: #333;
+}
+
+body.dark nav ul li a {
+    color: #f1f1f1;
+}
+
+body.dark nav ul li a:hover {
+    color: #FFD700;
+}
+
+body.dark header {
+    background: linear-gradient(to right, #222, #111);
+    color: #f1f1f1;
+}
+
+body.dark #certificates li {
+    background: #2a2a2a;
+    border-left: 5px solid #FFD700;
+}
+

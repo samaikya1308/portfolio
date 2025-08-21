@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<button id="darkModeToggle" class="btn">🌙 Dark Mode</button>
+
+    <header>
+        <img src="images/profile.jpg" alt="Samyu Profile Photo" width="150" style="border-radius: 50%;">
+        <h1>Samaikya.Kokala</h1>
+        <p> Welcome to My Protfolio</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a B.Tech graduate in Computer Science Engineering (Artificial Intelligence And Machine Learning).
+Recent graduate from Aurora's Technological Research Institute.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="projects/project1.html">Machine Learning Based Design Pattern Prediction</a></li>
+            <li><a href="projects/project2.html">Multi-ClassStress Detection via HeartRate Variability</a></li>
+            <li><a href="projects/project3.html">Dynamic Web Portfolio</a></li>
+            <li><a href="projects/project4.html">Privacy-Preserving Biometric identification Scheme</a></li>
+
+        </ul>
+    </section>
+    </section>
+    <section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>Python, Django, Java, C</li>
+    <li>Machine Learning, DSA, NLP</li>
+    <li>MySQL, HTML, CSS, JavaScript</li>
+  </ul>
+</section>
+
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+        <p>Email: samaikya.kokala@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/samaikya-kokala-404a74259">My Profile</a></p>
+        <p><a href="https://drive.google.com/file/d/1iOr2x-QsGgIJE5aX-tgDyfz0ADhSV0Y2/view?usp=drivesdk" target="_blank">Download My Resume</a></p>
+    </section>
+<script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")) {
+            toggleBtn.textContent = "☀️ Light Mode";
+        } else {
+            toggleBtn.textContent = "🌙 Dark Mode";
+        }
+    });
+</script>
+
+</body>
+</html>
